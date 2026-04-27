@@ -1,0 +1,186 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.content {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.statValue.warning {
+  color: var(--warning);
+}
+
+.statValue.danger {
+  color: var(--error);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.filterBtn {
+  padding: 0.5rem 1rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.filterBtn:hover {
+  border-color: var(--text-secondary);
+}
+
+.filterBtn.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.permissionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.permissionCard {
+  padding: 1.25rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.typeAndDates {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dateRange {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.statusText {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.statusText.approved {
+  color: var(--success);
+}
+
+.statusText.pending {
+  color: var(--warning);
+}
+
+.statusText.rejected {
+  color: var(--error);
+}
+
+.reason {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.appliedOn {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.emptyCard {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--text-secondary);
+}
+
+.emptyCard svg {
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.emptyCard h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dateRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats {
+    justify-content: space-around;
+  }
+
+  .dateRow {
+    grid-template-columns: 1fr;
+  }
+}

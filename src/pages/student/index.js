@@ -1,0 +1,11 @@
+export { StudentDashboard } from './StudentDashboard';
+export { StudentProfile } from './Profile';
+export { StudentAttendance } from './Attendance';
+export { StudentMarks } from './Marks';
+export { StudentTimetable } from './Timetable';
+export { StudentFees } from './Fees';
+export { StudentDoubts } from './Doubts';
+export { StudentPermissions } from './Permissions';
+export { StudentCampus } from './Campus';
+export { QRScanner } from './QRScanner';
+export { StudentNotifications } from './Notifications';

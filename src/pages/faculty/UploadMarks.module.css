@@ -1,0 +1,160 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.content {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.filterCard {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.uploadActions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: 1rem;
+}
+
+.studentsCard {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+
+.cardHeader h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cardHeader span {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.studentsList {
+  padding: 0 1.5rem;
+}
+
+.listHeader {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+
+.studentRow {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.studentRow:last-child {
+  border-bottom: none;
+}
+
+.rollNo {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.marksInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 1rem;
+  background-color: var(--background);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.marksInput:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.marksInput::-webkit-outer-spin-button,
+.marksInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 1.5rem;
+  background-color: var(--background);
+  border-top: 1px solid var(--border);
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.summaryItem span:first-child {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.summaryItem span:last-child {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+  .listHeader,
+  .studentRow {
+    grid-template-columns: 100px 1fr 80px;
+    gap: 0.5rem;
+  }
+}

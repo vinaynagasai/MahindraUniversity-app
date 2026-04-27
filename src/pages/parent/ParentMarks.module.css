@@ -1,0 +1,167 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.content {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.summaryCard {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summaryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.summaryHeader h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.summaryContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.gradeDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.gradeValue {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.gradeLabel {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.stats {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.subjectsCard {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.subjectsCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subjectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subjectItem {
+  padding: 0.75rem;
+  background-color: var(--background);
+  border-radius: var(--radius-md);
+}
+
+.subjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.subjectName {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.subjectMarks {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.subjectMarks span {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.remarksCard {
+  padding: 1.5rem;
+}
+
+.remarksCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.remarksContent p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.comparison {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: var(--background);
+  border-radius: var(--radius-md);
+}
+
+.comparison span {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .summaryContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    width: 100%;
+  }
+}
